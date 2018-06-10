@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Card</h2>
+  <form>
+    <div class="form-group">
+      <label for="userName">Name:</label>
+      <input type="userName" [(ngModel)]="card.userName" placeholder="Name" name="userName" class="form-control" id="userName">
+    </div>
+
+    <div class="form-group">
+      <label for="cardNumber">Card Number:</label>
+      <input [(ngModel)]="card.cardNumber" placeholder="Number" name="cardNumber" class="form-control" id="cardNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="expiryDate">Expiry Date:</label>
+      <input [(ngModel)]="card.expiryDate" placeholder="Date" name="expiryDate" class="form-control" id="expiryDate">
+    </div>
+
+    <button class="btn btn-success" (click)="addCard()">Add Card</button>
+  </form>
+</div>
